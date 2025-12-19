@@ -178,6 +178,20 @@ Libraries are grouped **by programming language**. Each entry includes several c
   - Notes: Great for quick experimentation with A2A agents.  
   - Tags: 🧪 Experimental / research
 
+- **[Protolink](https://github.com/nMaroulis/protolink)**
+
+  ![stars](https://img.shields.io/github/stars/nMaroulis/protolink?style=social)
+  ![forks](https://img.shields.io/github/forks/nMaroulis/protolink?style=social)
+  ![last commit](https://img.shields.io/github/last-commit/nMaroulis/protolink?color=blue)
+
+  A lightweight library to build autonomous agents, automating the transport, LLM & tool integration.  
+  - Role: Client + Server / Agent Framework
+  - Architecture: Peer-to-peer  
+  - Readiness: Experimental  
+  - Complexity: Beginner-friendly  
+  - Notes: Great for quick experimentation with A2A agents.  
+  - Tags: ✅ Beginner-friendly, 🧪 Experimental / research, 🌐 Multi-agent support
+
 ---
 
 ### JavaScript / TypeScript
