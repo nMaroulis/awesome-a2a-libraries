@@ -123,9 +123,10 @@ Libraries are grouped **by programming language**. Each entry includes several c
 ### Python
 
 - **[Python A2A](https://github.com/a2aproject/a2a-python)**  
-![stars](https://img.shields.io/github/stars/a2aproject/a2a-python?style=social)
-![forks](https://img.shields.io/github/forks/a2aproject/a2a-python?style=social)
-![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-python?color=blue)
+
+  ![stars](https://img.shields.io/github/stars/a2aproject/a2a-python?style=social)
+  ![forks](https://img.shields.io/github/forks/a2aproject/a2a-python?style=social)
+  ![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-python?color=blue)
 
   The official Python SDK for the Agent2Agent (A2A) Protocol, enabling building A2A‑compliant agents and servers.  
   - Role: Client + Server  
@@ -136,9 +137,10 @@ Libraries are grouped **by programming language**. Each entry includes several c
   - Tags: 🌐 Multi-agent support, 🏢 Enterprise-ready
 
 - **[Pydantic AI](https://github.com/pydantic/pydantic-ai)**  
-![stars](https://img.shields.io/github/stars/pydantic/pydantic-ai?style=social)
-![forks](https://img.shields.io/github/forks/pydantic/pydantic-ai?style=social)
-![last commit](https://img.shields.io/github/last-commit/pydantic/pydantic-ai?color=blue)
+
+  ![stars](https://img.shields.io/github/stars/pydantic/pydantic-ai?style=social)
+  ![forks](https://img.shields.io/github/forks/pydantic/pydantic-ai?style=social)
+  ![last commit](https://img.shields.io/github/last-commit/pydantic/pydantic-ai?color=blue)
 
   A Python agent framework with native A2A support via `to_a2a()` that can expose agents as A2A servers using FastA2A.  
   - Role: Client + Server / Agent Framework  
@@ -149,9 +151,10 @@ Libraries are grouped **by programming language**. Each entry includes several c
   - Tags: 🌐 Multi-agent support, ✅ Beginner-friendly
 
 - **[FastA2A](https://github.com/pydantic/fasta2a)**  
-![stars](https://img.shields.io/github/stars/pydantic/fasta2a?style=social)
-![forks](https://img.shields.io/github/forks/pydantic/fasta2a?style=social)
-![last commit](https://img.shields.io/github/last-commit/pydantic/fasta2a?color=blue)
+
+  ![stars](https://img.shields.io/github/stars/pydantic/fasta2a?style=social)
+  ![forks](https://img.shields.io/github/forks/pydantic/fasta2a?style=social)
+  ![last commit](https://img.shields.io/github/last-commit/pydantic/fasta2a?color=blue)
 
   An ASGI-based A2A server implementation designed to expose agents as A2A endpoints.  
   - Role: Server
@@ -162,9 +165,10 @@ Libraries are grouped **by programming language**. Each entry includes several c
   - Tags: 🌐 Multi-agent support, ✅ Beginner-friendly
 
 - **[cA2A](https://github.com/a2aproject/a2a-samples)** *(CLI utility)*  
-![stars](https://img.shields.io/github/stars/a2aproject/a2a-samples?style=social)
-![forks](https://img.shields.io/github/forks/a2aproject/a2a-samples?style=social)
-![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-samples?color=blue)
+
+  ![stars](https://img.shields.io/github/stars/a2aproject/a2a-samples?style=social)
+  ![forks](https://img.shields.io/github/forks/a2aproject/a2a-samples?style=social)
+  ![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-samples?color=blue)
 
   A simple CLI utility for interacting with A2A agents, useful for debugging or prototyping.  
   - Role: Utility  
@@ -179,9 +183,10 @@ Libraries are grouped **by programming language**. Each entry includes several c
 ### JavaScript / TypeScript
 
 - **[A2A JS SDK](https://github.com/a2aproject/a2a-js)**  
-![stars](https://img.shields.io/github/stars/a2aproject/a2a-js?style=social)
-![forks](https://img.shields.io/github/forks/a2aproject/a2a-js?style=social)
-![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-js?color=blue)
+
+  ![stars](https://img.shields.io/github/stars/a2aproject/a2a-js?style=social)
+  ![forks](https://img.shields.io/github/forks/a2aproject/a2a-js?style=social)
+  ![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-js?color=blue)
 
   Official JavaScript/TypeScript SDK for A2A Protocol, enabling agent servers and clients in Node.js/TS projects.  
   - Role: Client + Server  
@@ -196,9 +201,10 @@ Libraries are grouped **by programming language**. Each entry includes several c
 ### Java
 
 - **[A2A Java SDK](https://github.com/a2aproject/a2a-java)**  
-![stars](https://img.shields.io/github/stars/a2aproject/a2a-java?style=social)
-![forks](https://img.shields.io/github/forks/a2aproject/a2a-java?style=social)
-![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-java?color=blue)
+
+  ![stars](https://img.shields.io/github/stars/a2aproject/a2a-java?style=social)
+  ![forks](https://img.shields.io/github/forks/a2aproject/a2a-java?style=social)
+  ![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-java?color=blue)
 
   Official Java SDK for building A2A‑compliant agents and servers.  
   - Role: Client + Server  
@@ -213,9 +219,10 @@ Libraries are grouped **by programming language**. Each entry includes several c
 ### Go
 
 - **[A2A Go SDK](https://github.com/a2aproject/a2a-go)**  
-![stars](https://img.shields.io/github/stars/a2aproject/a2a-go?style=social)
-![forks](https://img.shields.io/github/forks/a2aproject/a2a-go?style=social)
-![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-go?color=blue)
+
+  ![stars](https://img.shields.io/github/stars/a2aproject/a2a-go?style=social)
+  ![forks](https://img.shields.io/github/forks/a2aproject/a2a-go?style=social)
+  ![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-go?color=blue)
 
   Official Go SDK for implementing A2A servers and clients.  
   - Role: Client + Server  
@@ -226,6 +233,11 @@ Libraries are grouped **by programming language**. Each entry includes several c
   - Tags: 🌐 Multi-agent support
 
 - **[tRPC-A2A-Go](https://github.com/trpc-group/trpc-a2a-go)** *(community implementation)*  
+
+  ![stars](https://img.shields.io/github/stars/trpc-group/trpc-a2a-go?style=social)
+  ![forks](https://img.shields.io/github/forks/trpc-group/trpc-a2a-go?style=social)
+  ![last commit](https://img.shields.io/github/last-commit/trpc-group/trpc-a2a-go?color=blue)
+
   Community Go implementation that follows the A2A protocol with examples and utilities.  
   - Role: Client + Server  
   - Architecture: Peer-to-peer  
@@ -239,9 +251,10 @@ Libraries are grouped **by programming language**. Each entry includes several c
 ### Rust
 
 - **[a2a-rs](https://github.com/EmilLindfors/a2a-rs)**  
-![stars](https://img.shields.io/github/stars/EmilLindfors/a2a-rs?style=social)
-![forks](https://img.shields.io/github/forks/EmilLindfors/a2a-rs?style=social)
-![last commit](https://img.shields.io/github/last-commit/EmilLindfors/a2a-rs?color=blue)
+
+  ![stars](https://img.shields.io/github/stars/EmilLindfors/a2a-rs?style=social)
+  ![forks](https://img.shields.io/github/forks/EmilLindfors/a2a-rs?style=social)
+  ![last commit](https://img.shields.io/github/last-commit/EmilLindfors/a2a-rs?color=blue)
 
   Rust implementation of the A2A protocol with examples and production-like use cases.  
   - Role: Client + Server  
@@ -256,9 +269,10 @@ Libraries are grouped **by programming language**. Each entry includes several c
 ### C#
 
 - **[A2A .NET SDK](https://github.com/a2aproject/a2a-dotnet)**  
-![stars](https://img.shields.io/github/stars/a2aproject/a2a-dotnet?style=social)
-![forks](https://img.shields.io/github/forks/a2aproject/a2a-dotnet?style=social)
-![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-dotnet?color=blue)
+
+  ![stars](https://img.shields.io/github/stars/a2aproject/a2a-dotnet?style=social)
+  ![forks](https://img.shields.io/github/forks/a2aproject/a2a-dotnet?style=social)
+  ![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-dotnet?color=blue)
 
   Official .NET implementation of the A2A Protocol for C# applications.  
   - Role: Client + Server  
