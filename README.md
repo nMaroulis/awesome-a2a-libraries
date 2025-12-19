@@ -63,7 +63,7 @@ Key features of A2A include:
 - SaaS platforms or hosted products  
 - UI tools or prompt collections/templates  
 
-For broader agent framework coverage, see *awesome-agents* or *awesome-ai-agents* lists.
+For broader agent framework coverage see [awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents) or [awesome-agent-papers](https://github.com/luo-junyu/Awesome-Agent-Papers) for new 📚 research on genAI & agents.
 
 ## Programming Languages
 
