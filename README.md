@@ -46,9 +46,10 @@ Key features of A2A include:
    - [Go](#go)  
    - [Rust](#rust)  
    - [C#](#c)  
-4. [Related Ecosystem](#related-ecosystem)  
-5. [Contribution Guidelines](#contribution-guidelines)  
-6. [License](#license)  
+4. [UI / Visual Orchestration for A2A](#ui--visual-orchestration-for-a2a)  
+5. [Related Ecosystem](#related-ecosystem)  
+6. [Contribution Guidelines](#contribution-guidelines)  
+7. [License](#license)  
 
 ## Scope
 
@@ -178,6 +179,20 @@ Libraries are grouped **by programming language**. Each entry includes several c
   - Notes: Great for quick experimentation with A2A agents.  
   - Tags: 🧪 Experimental / research
 
+- **[CrewAI](https://github.com/crewAIInc/crewAI/)**  
+
+  ![stars](https://img.shields.io/github/stars/crewAIInc/crewAI?style=social)
+  ![forks](https://img.shields.io/github/forks/crewAIInc/crewAI?style=social)
+  ![last commit](https://img.shields.io/github/last-commit/crewAIInc/crewAI?color=blue)
+
+  CrewAI is a multi-agent orchestration platform that supports A2A agent delegation, enabling agents to assign tasks to other agents and communicate via the A2A protocol. The following 📚 [docs](https://docs.crewai.com/en/learn/a2a-agent-delegation) showcase how A2A is implemented by crewAI.  
+  - Role: Client + Server / Agent Framework  
+  - Architecture: Hybrid (peer-to-peer + coordinator-assisted)  
+  - Readiness: Stable / Production-ready  
+  - Complexity: Intermediate  
+  - Notes: Supports agent delegation, task routing, and multi-agent collaboration; designed for enterprise and scalable multi-agent systems.  
+  - Tags: 🌐 Multi-agent support, 🏢 Enterprise-ready
+
 - **[Protolink](https://github.com/nMaroulis/protolink)**
 
   ![stars](https://img.shields.io/github/stars/nMaroulis/protolink?style=social)
@@ -297,6 +312,23 @@ Libraries are grouped **by programming language**. Each entry includes several c
   - Tags: 🌐 Multi-agent support
 
 ---
+
+## UI / Visual Orchestration for A2A
+
+At the time of writing, there are **no visual or low-code tools that natively support the Agent-to-Agent (A2A) protocol**.
+
+Existing visual agent builders and workflow tools rely on **centralized orchestration** and do not implement A2A peer-to-peer semantics.
+  - **[n8n](https://github.com/n8n-io/n8n)** – Visual workflow automation with centralized orchestration; node-based flows using HTTP calls, not peer-to-peer agents.
+  - **[Flowise](https://github.com/FlowiseAI/Flowise)** – Visual agent and chain builder on top of LangChain/LangGraph; centralized orchestration with no native agent interoperability.
+  - **[LangFlow](https://github.com/langflow-ai/langflow)** – Visual LLM workflow designer focused on prompt and chain composition rather than autonomous agents.
+  - **[AutoGen Studio](https://github.com/microsoft/autogen)** – UI for orchestrating AutoGen agents using a coordinator-based model; lacks protocol-level interoperability.
+  - **[CrewAI Studio](https://github.com/strnad/CrewAI-Studio)** – Visual agent orchestration built around a manager–worker model with centrally planned task execution.
+
+
+Projects exploring agent-generated UI (e.g. A2UI) or visual workflows may integrate with A2A in the future, but **no A2A-native UI tooling exists yet**.
+
+This section will be updated as the ecosystem evolves.
+
 
 ## Related Ecosystem
 
