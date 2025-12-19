@@ -122,71 +122,108 @@ Libraries are grouped **by programming language**. Each entry includes several c
 
 ### Python
 
-- **[A2A Python SDK](https://github.com/a2aproject/a2a-python)**  
+- **[Python A2A](https://github.com/a2aproject/a2a-python)**  
+![stars](https://img.shields.io/github/stars/a2aproject/a2a-python?style=social)
+![forks](https://img.shields.io/github/forks/a2aproject/a2a-python?style=social)
+![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-python?color=blue)
+
   The official Python SDK for the Agent2Agent (A2A) Protocol, enabling building A2A‑compliant agents and servers.  
   - Role: Client + Server  
   - Architecture: Peer-to-peer  
   - Readiness: Stable  
   - Complexity: Intermediate  
   - Notes: Official SDK with HTTP/gRPC support, async Python support via `a2a-sdk` package.  
-  - Optional Tags: 🌐 Multi-agent support
+  - Tags: 🌐 Multi-agent support, 🏢 Enterprise-ready
 
 - **[Pydantic AI](https://github.com/pydantic/pydantic-ai)**  
+![stars](https://img.shields.io/github/stars/pydantic/pydantic-ai?style=social)
+![forks](https://img.shields.io/github/forks/pydantic/pydantic-ai?style=social)
+![last commit](https://img.shields.io/github/last-commit/pydantic/pydantic-ai?color=blue)
+
   A Python agent framework with native A2A support via `to_a2a()` that can expose agents as A2A servers using FastA2A.  
   - Role: Client + Server / Agent Framework  
   - Architecture: Peer-to-peer  
   - Readiness: Stable  
   - Complexity: Intermediate  
   - Notes: Built by the Pydantic team, strong type safety, FastAPI-style ergonomics, supports exposing agents as A2A servers.  
-  - Optional Tags: 🌐 Multi-agent support, ✅ Beginner-friendly
+  - Tags: 🌐 Multi-agent support, ✅ Beginner-friendly
 
-- **[`cA2A`](https://github.com/a2aproject/a2a-samples)** *(CLI utility)*  
+- **[FastA2A](https://github.com/pydantic/fasta2a)**  
+![stars](https://img.shields.io/github/stars/pydantic/fasta2a?style=social)
+![forks](https://img.shields.io/github/forks/pydantic/fasta2a?style=social)
+![last commit](https://img.shields.io/github/last-commit/pydantic/fasta2a?color=blue)
+
+  An ASGI-based A2A server implementation designed to expose agents as A2A endpoints.  
+  - Role: Server
+  - Architecture: Peer-to-peer
+  - Readiness: Experimental
+  - Complexity: Intermediate
+  - Notes: Built by the Pydantic team, integrates naturally with FastAPI and Pydantic AI.
+  - Tags: 🌐 Multi-agent support, ✅ Beginner-friendly
+
+- **[cA2A](https://github.com/a2aproject/a2a-samples)** *(CLI utility)*  
+![stars](https://img.shields.io/github/stars/a2aproject/a2a-samples?style=social)
+![forks](https://img.shields.io/github/forks/a2aproject/a2a-samples?style=social)
+![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-samples?color=blue)
+
   A simple CLI utility for interacting with A2A agents, useful for debugging or prototyping.  
   - Role: Utility  
   - Architecture: Peer-to-peer  
   - Readiness: Experimental  
   - Complexity: Beginner-friendly  
   - Notes: Great for quick experimentation with A2A agents.  
-  - Optional Tags: 🧪 Experimental / research
+  - Tags: 🧪 Experimental / research
 
 ---
 
 ### JavaScript / TypeScript
 
 - **[A2A JS SDK](https://github.com/a2aproject/a2a-js)**  
+![stars](https://img.shields.io/github/stars/a2aproject/a2a-js?style=social)
+![forks](https://img.shields.io/github/forks/a2aproject/a2a-js?style=social)
+![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-js?color=blue)
+
   Official JavaScript/TypeScript SDK for A2A Protocol, enabling agent servers and clients in Node.js/TS projects.  
   - Role: Client + Server  
   - Architecture: Peer-to-peer  
   - Readiness: Stable  
   - Complexity: Intermediate  
   - Notes: Includes an Express adapter for server usage.  
-  - Optional Tags: 🌐 Multi-agent support
+  - Tags: 🌐 Multi-agent support
 
 ---
 
 ### Java
 
 - **[A2A Java SDK](https://github.com/a2aproject/a2a-java)**  
+![stars](https://img.shields.io/github/stars/a2aproject/a2a-java?style=social)
+![forks](https://img.shields.io/github/forks/a2aproject/a2a-java?style=social)
+![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-java?color=blue)
+
   Official Java SDK for building A2A‑compliant agents and servers.  
   - Role: Client + Server  
   - Architecture: Peer-to-peer  
   - Readiness: Stable  
   - Complexity: Intermediate  
   - Notes: Supports JSON-RPC, gRPC, and REST transports.  
-  - Optional Tags: 🌐 Multi-agent support
+  - Tags: 🌐 Multi-agent support
 
 ---
 
 ### Go
 
 - **[A2A Go SDK](https://github.com/a2aproject/a2a-go)**  
+![stars](https://img.shields.io/github/stars/a2aproject/a2a-go?style=social)
+![forks](https://img.shields.io/github/forks/a2aproject/a2a-go?style=social)
+![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-go?color=blue)
+
   Official Go SDK for implementing A2A servers and clients.  
   - Role: Client + Server  
   - Architecture: Peer-to-peer  
   - Readiness: Stable  
   - Complexity: Intermediate  
   - Notes: Examples include both server and client usage.  
-  - Optional Tags: 🌐 Multi-agent support
+  - Tags: 🌐 Multi-agent support
 
 - **[tRPC-A2A-Go](https://github.com/trpc-group/trpc-a2a-go)** *(community implementation)*  
   Community Go implementation that follows the A2A protocol with examples and utilities.  
@@ -195,43 +232,41 @@ Libraries are grouped **by programming language**. Each entry includes several c
   - Readiness: Experimental  
   - Complexity: Intermediate  
   - Notes: Includes session management and auth capabilities.  
-  - Optional Tags: 🧪 Experimental / research
+  - Tags: 🧪 Experimental / research
 
 ---
 
 ### Rust
 
 - **[a2a-rs](https://github.com/EmilLindfors/a2a-rs)**  
+![stars](https://img.shields.io/github/stars/EmilLindfors/a2a-rs?style=social)
+![forks](https://img.shields.io/github/forks/EmilLindfors/a2a-rs?style=social)
+![last commit](https://img.shields.io/github/last-commit/EmilLindfors/a2a-rs?color=blue)
+
   Rust implementation of the A2A protocol with examples and production-like use cases.  
   - Role: Client + Server  
   - Architecture: Peer-to-peer  
   - Readiness: Experimental  
   - Complexity: Advanced  
   - Notes: Includes demo agents showcasing HTTP/WebSocket usage.  
-  - Optional Tags: 🧪 Experimental / research
+  - Tags: 🧪 Experimental / research
 
 ---
 
 ### C#
 
 - **[A2A .NET SDK](https://github.com/a2aproject/a2a-dotnet)**  
+![stars](https://img.shields.io/github/stars/a2aproject/a2a-dotnet?style=social)
+![forks](https://img.shields.io/github/forks/a2aproject/a2a-dotnet?style=social)
+![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-dotnet?color=blue)
+
   Official .NET implementation of the A2A Protocol for C# applications.  
   - Role: Client + Server  
   - Architecture: Peer-to-peer  
   - Readiness: Stable  
   - Complexity: Intermediate  
   - Notes: Suitable for .NET and ASP.NET Core apps.  
-  - Optional Tags: 🌐 Multi-agent support
-
-- **[a2a-dotnet](https://github.com/a2aproject/a2a-dotnet)** *(community options)*  
-  Other .NET A2A implementations focusing on interoperability.  
-  - Role: Client + Server  
-  - Architecture: Peer-to-peer  
-  - Readiness: Experimental  
-  - Complexity: Intermediate  
-  - Notes: Useful alternatives or enhancements.  
-  - Optional Tags: 🧪 Experimental / research
-
+  - Tags: 🌐 Multi-agent support
 
 ---
 
