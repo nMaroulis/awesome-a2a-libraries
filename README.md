@@ -81,39 +81,54 @@ Currently, libraries for the following programming languages are supported:
 
 ## How to Read This List
 
-Libraries are grouped **by programming language**. Each entry includes several classifications to help you quickly understand its purpose, readiness, and usability.
+Libraries are grouped **by programming language**. Each entry is described using a small set of consistent classifications focused on **A2A protocol responsibilities and usability**.
 
-### Classification Rules
+### Classification Dimensions
 
-- **Role** – what part of the A2A ecosystem the library enables:  
-  - `Client` – implements *initiator* behavior, sending tasks to other agents according to A2A.  
-  - `Server` – implements *receiver/executor* behavior, accepting tasks and returning results.  
-  - `Client + Server` – supports both initiating and handling A2A interactions.  
-  - `Agent Framework` – higher-level library including client/server behavior plus orchestration or workflow tools.  
-  - `Utility` – helps implement, test, debug, or validate A2A (e.g., schemas, validators, tooling).  
+#### **A2A Capability**
+What part of the Agent-to-Agent protocol the library implements:
 
-- **Architecture / Model** – how agents communicate:  
-  - `Peer-to-peer` – direct agent-to-agent communication.  
-  - `Hybrid` – combination of peer-to-peer and server-mediated communication.  
+- `Client` – initiates A2A tasks and conversations
+- `Server` – receives, executes, and responds to A2A tasks
+- `Client + Server` – full A2A node implementation
+- `Spec / Schema` – protocol definitions, schemas, or validators
+- `Tooling` – testing, debugging, CLI, or developer utilities for A2A
 
-- **Readiness / Stability** – how mature and production-ready the library is:  
-  - `Experimental` – early-stage, APIs may change; mainly for testing or learning.  
-  - `Stable` – well-maintained and suitable for serious projects.  
-  - `Production-ready` – proven in production, actively maintained, enterprise-ready.  
+#### **Abstraction Level**
+How opinionated or low-level the library is:
 
-- **Complexity / Learning Curve** – level of experience needed to use the library effectively:  
-  - `Beginner-friendly` – easy to install and use, well-documented.  
-  - `Intermediate` – some learning or configuration required.  
-  - `Advanced` – low-level or highly configurable, intended for experts.  
+- `Low-level` – raw protocol primitives
+- `Mid-level` – helpers and lifecycle abstractions
+- `High-level` – batteries-included, minimal boilerplate
 
-- **Notes** – highlight extra features,
+#### **Transport / Integration**
+How agents communicate or integrate:
 
-- **Optional Tags** - tags to highlight features:  
-  - ✅ Beginner-friendly  
-  - ⚡ High-performance  
-  - 🌐 Multi-agent support  
-  - 🏢 Enterprise-ready  
-  - 🧪 Experimental / research  
+- `HTTP / REST`
+- `WebSocket`
+- `gRPC`
+- `JSON-RPC`
+- `Custom transport`
+- `Pluggable transport`
+
+#### **Maturity**
+Current stability of the project:
+
+- `Experimental` – early-stage, APIs may change
+- `Usable` – stable enough for real projects
+- `Production-ready` – battle-tested in production
+
+#### **Tags**
+Optional tags highlight notable characteristics:
+
+- 🌐 Multi-agent
+- 🔐 Auth / Security
+- ⚡ High-performance
+- 🧪 Research / Prototype
+- 🏢 Enterprise-oriented
+- 🔌 Framework integration
+- 🧩 Extensible
+- 📜 Spec-faithful
 
 
 > Tip: Only include libraries that are **publicly available, actively maintained**, and relevant to **A2A** or **agent orchestration**.
@@ -130,12 +145,12 @@ Libraries are grouped **by programming language**. Each entry includes several c
   ![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-python?color=blue)
 
   The official Python SDK for the Agent2Agent (A2A) Protocol, enabling building A2A‑compliant agents and servers.  
-  - Role: Client + Server  
-  - Architecture: Peer-to-peer  
-  - Readiness: Stable  
-  - Complexity: Intermediate  
-  - Notes: Official SDK with HTTP/gRPC support, async Python support via `a2a-sdk` package.  
-  - Tags: 🌐 Multi-agent support, 🏢 Enterprise-ready
+  - **A2A Capability**: Client + Server
+  - **Abstraction Level**: Mid-level
+  - **Transport / Integration**: HTTP / REST, gRPC, JSON-RPC
+  - **Maturity**: Production-ready
+  - **Notes**: Official reference SDK with async support via `a2a-sdk` package and full protocol coverage.
+  - **Tags**: 🌐 Multi-agent, 🏢 Enterprise-oriented, 📜 Spec-faithful
 
 - **[Pydantic AI](https://github.com/pydantic/pydantic-ai)**  
 
@@ -144,12 +159,12 @@ Libraries are grouped **by programming language**. Each entry includes several c
   ![last commit](https://img.shields.io/github/last-commit/pydantic/pydantic-ai?color=blue)
 
   A Python agent framework with native A2A support via `to_a2a()` that can expose agents as A2A servers using FastA2A.  
-  - Role: Client + Server / Agent Framework  
-  - Architecture: Peer-to-peer  
-  - Readiness: Stable  
-  - Complexity: Intermediate  
-  - Notes: Built by the Pydantic team, strong type safety, FastAPI-style ergonomics, supports exposing agents as A2A servers.  
-  - Tags: 🌐 Multi-agent support, ✅ Beginner-friendly
+  - **A2A Capability**: Client + Server
+  - **Abstraction Level**: High-level
+  - **Transport / Integration**: HTTP / REST
+  - **Maturity**: Usable
+  - **Notes**: Strong type-safety and FastAPI-style ergonomics; A2A is an integration, not the core focus.
+  - **Tags**: 🌐 Multi-agent, 🔌 Framework integration, 🧩 Extensible
 
 - **[FastA2A](https://github.com/pydantic/fasta2a)**  
 
@@ -158,12 +173,13 @@ Libraries are grouped **by programming language**. Each entry includes several c
   ![last commit](https://img.shields.io/github/last-commit/pydantic/fasta2a?color=blue)
 
   An ASGI-based A2A server implementation designed to expose agents as A2A endpoints.  
-  - Role: Server
-  - Architecture: Peer-to-peer
-  - Readiness: Experimental
-  - Complexity: Intermediate
-  - Notes: Built by the Pydantic team, integrates naturally with FastAPI and Pydantic AI.
-  - Tags: 🌐 Multi-agent support, ✅ Beginner-friendly
+  - **A2A Capability**: Server
+  - **Abstraction Level**: Mid-level
+  - **Transport / Integration**: HTTP / REST
+  - **Maturity**: Experimental
+  - **Notes**: Tight FastAPI integration; often used together with Pydantic AI.
+  - **Tags**: 🧪 Research / Prototype, 🔌 Framework integration
+
 
 - **[cA2A](https://github.com/a2aproject/a2a-samples)** *(CLI utility)*  
 
@@ -172,12 +188,13 @@ Libraries are grouped **by programming language**. Each entry includes several c
   ![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-samples?color=blue)
 
   A simple CLI utility for interacting with A2A agents, useful for debugging or prototyping.  
-  - Role: Utility  
-  - Architecture: Peer-to-peer  
-  - Readiness: Experimental  
-  - Complexity: Beginner-friendly  
-  - Notes: Great for quick experimentation with A2A agents.  
-  - Tags: 🧪 Experimental / research
+  - **A2A Capability**: Tooling
+  - **Abstraction Level**: High-level
+  - **Transport / Integration**: HTTP / REST
+  - **Maturity**: Experimental
+  - **Notes**: Useful for manual inspection and protocol exploration.
+  - **Tags**: 🧪 Research / Prototype
+
 
 - **[CrewAI](https://github.com/crewAIInc/crewAI/)**  
 
@@ -186,12 +203,13 @@ Libraries are grouped **by programming language**. Each entry includes several c
   ![last commit](https://img.shields.io/github/last-commit/crewAIInc/crewAI?color=blue)
 
   CrewAI is a multi-agent orchestration platform that supports A2A agent delegation, enabling agents to assign tasks to other agents and communicate via the A2A protocol. The following 📚 [docs](https://docs.crewai.com/en/learn/a2a-agent-delegation) showcase how A2A is implemented by crewAI.  
-  - Role: Client + Server / Agent Framework  
-  - Architecture: Hybrid (peer-to-peer + coordinator-assisted)  
-  - Readiness: Stable / Production-ready  
-  - Complexity: Intermediate  
-  - Notes: Supports agent delegation, task routing, and multi-agent collaboration; designed for enterprise and scalable multi-agent systems.  
-  - Tags: 🌐 Multi-agent support, 🏢 Enterprise-ready
+  - **A2A Capability**: Client + Server
+  - **Abstraction Level**: High-level
+  - **Transport / Integration**: Pluggable transport
+  - **Maturity**: Production-ready
+  - **Notes**: A2A is one of several supported delegation mechanisms.
+  - **Tags**: 🌐 Multi-agent, 🏢 Enterprise-oriented, 🔌 Framework integration
+
 
 - **[Protolink](https://github.com/nMaroulis/protolink)**
 
@@ -200,12 +218,12 @@ Libraries are grouped **by programming language**. Each entry includes several c
   ![last commit](https://img.shields.io/github/last-commit/nMaroulis/protolink?color=blue)
 
   A lightweight library to build autonomous agents, automating the transport, LLM & tool integration.  
-  - Role: Client + Server / Agent Framework
-  - Architecture: Peer-to-peer  
-  - Readiness: Experimental  
-  - Complexity: Beginner-friendly  
-  - Notes: Great for quick experimentation with A2A agents.  
-  - Tags: ✅ Beginner-friendly, 🧪 Experimental / research, 🌐 Multi-agent support
+  - **A2A Capability**: Client + Server, Spec / Schema
+  - **Abstraction Level**: High-level
+  - **Transport / Integration**: HTTP / REST, WebSocket, gRPC, JSON-RPC, Custom transport
+  - **Maturity**: Experimental
+  - **Notes**: Optimized for rapid experimentation, includes abstractions for each A2A component (discovery, messaging, session management) and LLM & tooling.
+  - **Tags**: 🧪 Research / Prototype, 🧩 Extensible, 🌐 Multi-agent, ✅ Beginner-friendly
 
 ---
 
@@ -218,12 +236,12 @@ Libraries are grouped **by programming language**. Each entry includes several c
   ![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-js?color=blue)
 
   Official JavaScript/TypeScript SDK for A2A Protocol, enabling agent servers and clients in Node.js/TS projects.  
-  - Role: Client + Server  
-  - Architecture: Peer-to-peer  
-  - Readiness: Stable  
-  - Complexity: Intermediate  
-  - Notes: Includes an Express adapter for server usage.  
-  - Tags: 🌐 Multi-agent support
+  - **A2A Capability:** Client + Server
+  - **Abstraction Level:** Mid-level
+  - **Transport / Integration:** HTTP / REST, gRPC, JSON-RPC
+  - **Maturity:** Production-ready
+  - **Notes:** Official JS/TS reference SDK.
+  - **Tags:** 🌐 Multi-agent, 📜 Spec-faithful
 
 ---
 
@@ -236,12 +254,12 @@ Libraries are grouped **by programming language**. Each entry includes several c
   ![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-java?color=blue)
 
   Official Java SDK for building A2A‑compliant agents and servers.  
-  - Role: Client + Server  
-  - Architecture: Peer-to-peer  
-  - Readiness: Stable  
-  - Complexity: Intermediate  
-  - Notes: Supports JSON-RPC, gRPC, and REST transports.  
-  - Tags: 🌐 Multi-agent support
+  - **A2A Capability**: Client + Server
+  - **Abstraction Level**: Mid-level
+  - **Transport / Integration**: HTTP / REST, gRPC, JSON-RPC
+  - **Maturity**: Production-ready
+  - **Notes**: Official reference implementation for the JVM ecosystem.
+  - **Tags**: 🌐 Multi-agent, 📜 Spec-faithful
 
 ---
 
@@ -254,12 +272,12 @@ Libraries are grouped **by programming language**. Each entry includes several c
   ![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-go?color=blue)
 
   Official Go SDK for implementing A2A servers and clients.  
-  - Role: Client + Server  
-  - Architecture: Peer-to-peer  
-  - Readiness: Stable  
-  - Complexity: Intermediate  
-  - Notes: Examples include both server and client usage.  
-  - Tags: 🌐 Multi-agent support
+  - **A2A Capability**: Client + Server
+  - **Abstraction Level**: Mid-level
+  - **Transport / Integration**: HTTP / REST, gRPC, JSON-RPC
+  - **Maturity**: Production-ready
+  - **Notes**: Includes end-to-end examples for both client and server implementations.
+  - **Tags**: 🌐 Multi-agent, 📜 Spec-faithful
 
 - **[tRPC-A2A-Go](https://github.com/trpc-group/trpc-a2a-go)** *(community implementation)*  
 
@@ -268,12 +286,12 @@ Libraries are grouped **by programming language**. Each entry includes several c
   ![last commit](https://img.shields.io/github/last-commit/trpc-group/trpc-a2a-go?color=blue)
 
   Community Go implementation that follows the A2A protocol with examples and utilities.  
-  - Role: Client + Server  
-  - Architecture: Peer-to-peer  
-  - Readiness: Experimental  
-  - Complexity: Intermediate  
-  - Notes: Includes session management and auth capabilities.  
-  - Tags: 🧪 Experimental / research
+  - **A2A Capability**: Client + Server
+  - **Abstraction Level**: Mid-level
+  - **Transport / Integration**: HTTP / REST
+  - **Maturity**: Experimental
+  - **Notes**: Includes session management and authentication helpers beyond the core spec.
+  - **Tags**: 🧪 Research / Prototype, 🧩 Extensible
 
 ---
 
@@ -286,12 +304,12 @@ Libraries are grouped **by programming language**. Each entry includes several c
   ![last commit](https://img.shields.io/github/last-commit/EmilLindfors/a2a-rs?color=blue)
 
   Rust implementation of the A2A protocol with examples and production-like use cases.  
-  - Role: Client + Server  
-  - Architecture: Peer-to-peer  
-  - Readiness: Experimental  
-  - Complexity: Advanced  
-  - Notes: Includes demo agents showcasing HTTP/WebSocket usage.  
-  - Tags: 🧪 Experimental / research
+  - **A2A Capability**: Client + Server
+  - **Abstraction Level**: Low-level
+  - **Transport / Integration**: HTTP / REST, WebSocket
+  - **Maturity**: Experimental
+  - **Notes**: Focuses on correctness and performance; suitable for systems-level integrations.
+  - **Tags**: 🧪 Research / Prototype, ⚡ High-performance
 
 ---
 
@@ -304,12 +322,12 @@ Libraries are grouped **by programming language**. Each entry includes several c
   ![last commit](https://img.shields.io/github/last-commit/a2aproject/a2a-dotnet?color=blue)
 
   Official .NET implementation of the A2A Protocol for C# applications.  
-  - Role: Client + Server  
-  - Architecture: Peer-to-peer  
-  - Readiness: Stable  
-  - Complexity: Intermediate  
-  - Notes: Suitable for .NET and ASP.NET Core apps.  
-  - Tags: 🌐 Multi-agent support
+  - **A2A Capability**: Client + Server
+  - **Abstraction Level**: Mid-level
+  - **Transport / Integration**: HTTP / REST, gRPC, JSON-RPC
+  - **Maturity**: Production-ready
+  - **Notes**: Designed for .NET and ASP.NET Core applications with support for modern .NET features.
+  - **Tags**: 🌐 Multi-agent, 📜 Spec-faithful
 
 ---
 
