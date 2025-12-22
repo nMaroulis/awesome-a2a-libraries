@@ -147,7 +147,7 @@ Optional tags highlight notable characteristics:
   The official Python SDK for the Agent2Agent (A2A) Protocol, enabling building A2A‑compliant agents and servers.  
   - **A2A Capability**: Client + Server
   - **Abstraction Level**: Mid-level
-  - **Transport / Integration**: HTTP / REST, gRPC, JSON-RPC
+  - **Transport / Integration**: HTTP / REST (JSON-RPC), gRPC
   - **Maturity**: Production-ready
   - **Notes**: Official reference SDK with async support via `a2a-sdk` package and full protocol coverage.
   - **Tags**: 🌐 Multi-agent, 🏢 Enterprise-oriented, 📜 Spec-faithful
@@ -220,7 +220,7 @@ Optional tags highlight notable characteristics:
   A lightweight library to build autonomous agents, automating the transport, LLM & tool integration.  
   - **A2A Capability**: Client + Server, Spec / Schema
   - **Abstraction Level**: High-level
-  - **Transport / Integration**: HTTP / REST, WebSocket, gRPC, JSON-RPC, Custom transport
+  - **Transport / Integration**: HTTP / REST, WebSocket, gRPC, Custom transport
   - **Maturity**: Experimental
   - **Notes**: Optimized for rapid experimentation, includes abstractions for each A2A component (discovery, messaging, session management) and LLM & tooling.
   - **Tags**: 🧪 Research / Prototype, 🧩 Extensible, 🌐 Multi-agent, ✅ Beginner-friendly
@@ -238,7 +238,7 @@ Optional tags highlight notable characteristics:
   Official JavaScript/TypeScript SDK for A2A Protocol, enabling agent servers and clients in Node.js/TS projects.  
   - **A2A Capability:** Client + Server
   - **Abstraction Level:** Mid-level
-  - **Transport / Integration:** HTTP / REST, gRPC, JSON-RPC
+  - **Transport / Integration:** HTTP / REST (JSON-RPC), gRPC
   - **Maturity:** Production-ready
   - **Notes:** Official JS/TS reference SDK.
   - **Tags:** 🌐 Multi-agent, 📜 Spec-faithful
@@ -256,7 +256,7 @@ Optional tags highlight notable characteristics:
   Official Java SDK for building A2A‑compliant agents and servers.  
   - **A2A Capability**: Client + Server
   - **Abstraction Level**: Mid-level
-  - **Transport / Integration**: HTTP / REST, gRPC, JSON-RPC
+  - **Transport / Integration**: HTTP / REST (JSON-RPC), gRPC
   - **Maturity**: Production-ready
   - **Notes**: Official reference implementation for the JVM ecosystem.
   - **Tags**: 🌐 Multi-agent, 📜 Spec-faithful
@@ -274,7 +274,7 @@ Optional tags highlight notable characteristics:
   Official Go SDK for implementing A2A servers and clients.  
   - **A2A Capability**: Client + Server
   - **Abstraction Level**: Mid-level
-  - **Transport / Integration**: HTTP / REST, gRPC, JSON-RPC
+  - **Transport / Integration**: HTTP / REST (JSON-RPC), gRPC
   - **Maturity**: Production-ready
   - **Notes**: Includes end-to-end examples for both client and server implementations.
   - **Tags**: 🌐 Multi-agent, 📜 Spec-faithful
@@ -324,7 +324,7 @@ Optional tags highlight notable characteristics:
   Official .NET implementation of the A2A Protocol for C# applications.  
   - **A2A Capability**: Client + Server
   - **Abstraction Level**: Mid-level
-  - **Transport / Integration**: HTTP / REST, gRPC, JSON-RPC
+  - **Transport / Integration**: HTTP / REST (JSON-RPC), gRPC
   - **Maturity**: Production-ready
   - **Notes**: Designed for .NET and ASP.NET Core applications with support for modern .NET features.
   - **Tags**: 🌐 Multi-agent, 📜 Spec-faithful
