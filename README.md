@@ -227,6 +227,18 @@ Optional tags highlight notable characteristics:
 
 ---
 
+---
+
+[YOAP A2A Protocol](https://github.com/huxinran2025-hash/YOAP-A2A)
+
+Open A2A protocol + relay server for person-to-person matching through AI agents. Any agent (OpenClaw, Cursor, Claude, mobile, chatbots) can register, seek, and match people.
+
+- A2A Capability: Server (Relay)
+- Abstraction Level: High-level
+- Transport / Integration: HTTP / REST (JSON)
+- Maturity: Production (live at yoap.io)
+- Notes: People-matching protocol. Includes SKILL.md for instant agent integration.
+- Tags: 🌐 Multi-agent, 👥 People-matching, 🔓 Open protocol
 ### JavaScript / TypeScript
 
 - **[A2A JS SDK](https://github.com/a2aproject/a2a-js)**  
