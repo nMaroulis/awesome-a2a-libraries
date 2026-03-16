@@ -45,7 +45,8 @@ Key features of A2A include:
    - [Java](#java)  
    - [Go](#go)  
    - [Rust](#rust)  
-   - [C#](#c)  
+   - [C#](#c)
+   - [Swift](#swift)
 4. [UI / Visual Orchestration for A2A](#ui--visual-orchestration-for-a2a)  
 5. [Related Ecosystem](#related-ecosystem)  
 6. [Contribution Guidelines](#contribution-guidelines)  
@@ -71,11 +72,11 @@ For broader agent framework coverage see [awesome-ai-agents](https://github.com/
 Currently, libraries for the following programming languages are supported:
 
 <p align="center">
-  <font color="#888" size="2">[ Python ]</font>   <font color="#888" size="2">[ JavaScript / TypeScript ]</font>   <font color="#888" size="2">[ Rust ]</font> <font color="#888" size="2">[ Java ]</font> <font color="#888" size="2">[ Go ]</font> <font color="#888" size="2">[ C# ]</font>
+  <font color="#888" size="2">[ Python ]</font>   <font color="#888" size="2">[ JavaScript / TypeScript ]</font>   <font color="#888" size="2">[ Rust ]</font> <font color="#888" size="2">[ Java ]</font> <font color="#888" size="2">[ Go ]</font> <font color="#888" size="2">[ C# ]</font> <font color="#888" size="2">[ Swift ]</font>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/pheralb/svgl/06a1c7f443bb702317165c5091e4a648a6bc2eda/static/library/python.svg" width="45" alt="Python" title="Python"/>  <img src="https://raw.githubusercontent.com/pheralb/svgl/06a1c7f443bb702317165c5091e4a648a6bc2eda/static/library/javascript.svg" width="45" alt="JS" />  <img src="https://raw.githubusercontent.com/pheralb/svgl/06a1c7f443bb702317165c5091e4a648a6bc2eda/static/library/rust.svg" width="45" alt="Rust" />  <img src="https://raw.githubusercontent.com/pheralb/svgl/06a1c7f443bb702317165c5091e4a648a6bc2eda/static/library/java.svg" width="45" alt="Java" />  <img src="https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg" width="45" alt="Go" />  <img src="https://raw.githubusercontent.com/pheralb/svgl/06a1c7f443bb702317165c5091e4a648a6bc2eda/static/library/csharp.svg" width="45" alt="Csharp" />
+  <img src="https://raw.githubusercontent.com/pheralb/svgl/06a1c7f443bb702317165c5091e4a648a6bc2eda/static/library/python.svg" width="45" alt="Python" title="Python"/>  <img src="https://raw.githubusercontent.com/pheralb/svgl/06a1c7f443bb702317165c5091e4a648a6bc2eda/static/library/javascript.svg" width="45" alt="JS" />  <img src="https://raw.githubusercontent.com/pheralb/svgl/06a1c7f443bb702317165c5091e4a648a6bc2eda/static/library/rust.svg" width="45" alt="Rust" />  <img src="https://raw.githubusercontent.com/pheralb/svgl/06a1c7f443bb702317165c5091e4a648a6bc2eda/static/library/java.svg" width="45" alt="Java" />  <img src="https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg" width="45" alt="Go" />  <img src="https://raw.githubusercontent.com/pheralb/svgl/06a1c7f443bb702317165c5091e4a648a6bc2eda/static/library/csharp.svg" width="45" alt="Csharp" />  <img src="https://raw.githubusercontent.com/pheralb/svgl/06a1c7f443bb702317165c5091e4a648a6bc2eda/static/library/swift.svg" width="45" alt="Swift" title="Swift"/>
 </p>
 
 
@@ -328,6 +329,24 @@ Optional tags highlight notable characteristics:
   - **Maturity**: Production-ready
   - **Notes**: Designed for .NET and ASP.NET Core applications with support for modern .NET features.
   - **Tags**: 🌐 Multi-agent, 📜 Spec-faithful
+
+---
+
+### Swift
+
+- **[A2A for Swift](https://github.com/Victory-Apps/a2a-swift)**
+
+  ![stars](https://img.shields.io/github/stars/Victory-Apps/a2a-swift?style=social)
+  ![forks](https://img.shields.io/github/forks/Victory-Apps/a2a-swift?style=social)
+  ![last commit](https://img.shields.io/github/last-commit/Victory-Apps/a2a-swift?color=blue)
+
+  A Swift SDK for the Agent-to-Agent (A2A) protocol with full v1.0 data model, JSON-RPC routing, SSE streaming with reconnection, and Vapor integration.
+  - **A2A Capability**: Client + Server
+  - **Abstraction Level**: Mid-level
+  - **Transport / Integration**: HTTP / SSE (JSON-RPC), Vapor
+  - **Maturity**: Usable
+  - **Notes**: AsyncSequence-based streaming, AgentExecutor pattern, TaskStore protocol, push notifications, testing utilities with mocks and fixtures. Supports macOS, Linux, iOS, tvOS, watchOS.
+  - **Tags**: 🍎 Apple platforms, 🌐 Multi-agent, 📜 Spec-faithful
 
 ---
 
