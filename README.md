@@ -384,6 +384,7 @@ This section will be updated as the ecosystem evolves.
 - **[A2A Protocol Specification](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)** – Official protocol documentation  
 - **[awesome-agents / awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents)** – Broader agent framework lists  
 - Multi-agent orchestration frameworks may integrate with A2A but are listed elsewhere  
+- **[TWZRD Agent Intel](https://intel.twzrd.xyz)** – Wallet-layer trust scoring MCP for A2A agent identity verification before x402 micropayments on Solana
 
 
 ## Contribution Guidelines
